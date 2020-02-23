@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+canvas {
+  position: absolute;
+  border-top: 4px solid black;
+  top: 70px;
+}
+
+.ImgBar {
+  position: absolute;
+  border-radius: 5px 5px 0px 0px;
+  background: #57606f;
+  width: 100%;
+  top: 0px;
+  height: 30px;
+}
+
+.ImageDiv {
+  width: 300px;
+  top: 0px;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.CloseIcons {
+  position: absolute;
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  width: 21px;
+}
+
+.UploadImageClass {
+  z-index: -1;
+  position: absolute;
+  top: 30px;
+  height: 300px;
+  width: 300px;
+}
+
+.icon {
+  width: 48px;
+}
+
+#tweakTools {
+  box-sizing: border-box;
+  z-index: 1;
+  padding-bottom: 11px;
+  padding-top: 11px;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  background: #d7ccc8;
+}
+
+.tool[class~="active"] {
+  background-color: grey;
+}
+
+#penOptions {
+  visibility: hidden;
+  z-index: 1;
+}
+
+#penOptions[class~="show"] {
+  visibility: visible;
+}
+
+#eraserOptions {
+  visibility: hidden;
+  z-index: 1;
+}
+
+#eraserOptions[class~="show"] {
+  visibility: visible;
+}
+
+#zoomOptions {
+  visibility: hidden;
+  z-index: 1;
+}
+
+#zoomOptions[class~="show"] {
+  visibility: visible;
+}
+
+#imageOptions {
+  visibility: hidden;
+  z-index: 1;
+}
+
+#imageOptions[class~="show"] {
+  visibility: visible;
+}
+
+div.controlleritem span[class~="active"] {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+div.controlleritem span {
+  background-color: rgb(132, 132, 132) !important;
+}
+
+div.EraserSize span[class~="active"] {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+div.EraserSize span {
+  background-color: rgb(132, 132, 132) !important;
+}
+
+.slider {
+  left: 0px;
+  top: 42%;
+  position: absolute;
+  -webkit-appearance: none;
+  width: 97%;
+  height: 13px;
+  border-radius: 5px;
+
+  background: #4db6ac;
+
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  /* transform: translate(0,-50%); */
+}
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #81d4fa;
+  cursor: pointer;
+}
+
+.RangeValueClass {
+  height: 20px;
+  width: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  left: 43%;
+  top: 0px;
+  position: absolute;
+}
